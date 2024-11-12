@@ -1,13 +1,34 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Svelte</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html lang="is">
+
+
+<head>
+  <meta charset="utf-8">
+  <script>
+    function correct(value) {
+        const corr = document.querySelector(".correct");
+        const incorr = document.querySelector(".incorrect");
+        if (value === correct){
+          corr.removeAttribute("class");
+
+        } else {
+          incorr.removeAttribute("class");
+        }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" defer src="scripts.js"></script>
+  <title></title>
+
+</head>
+
+<body>
+  <main>
+    <section class="question">
+
+    </section>
+    <button class="nextbtn">next question</button>
+  </main>
+</body>
+
 </html>

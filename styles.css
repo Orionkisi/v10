@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.correct {
+  display: none;
+}
+
+.incorrect {
+  display: none;
+}
